@@ -1,0 +1,76 @@
+name: clean_architecture
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0-134.0.dev <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+
+  dio:
+  http:
+
+  # state management
+  flutter_bloc:
+
+  # comparing dart objects
+  equatable:
+
+  # service locator
+  get_it:
+
+  # date Format
+  intl:
+
+  # Database
+  floor :
+
+  # make request to api
+  retrofit:
+
+  # flutter hooks
+  flutter_hooks:
+
+  audioplayers:
+
+  # cached image
+#  cached_network_image: ^3.2.3
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  retrofit_generator:
+  floor_generator:
+  build_runner:
+
+flutter:
+
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+    - assets/audio/
+
+
+  # example:
+  fonts:
+    - family: Muli
+      fonts:
+        - asset: assets/fonts/muli/Muli.ttf
+        - asset: assets/fonts/muli/Muli-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/muli/Muli-Light.ttf
+          weight: 300
+
+
+

@@ -1,0 +1,34 @@
+pubspec.yaml  :-  add packages
+
+create folder structure
+
+implement data_state.dart in core/resources
+
+Define Entity class in feature/domain/entity
+
+Create Repository classes & models
+    implement ArticleRepository in features/domain/repository
+    implement ArticleModel in feature/data/models    ( replace ArticleEntity to AricleModel )
+
+Make request to Api using Retrofit
+    implement NewsApiService in features/data/data_sources/remote
+
+Use Cases
+    implement in ArticleRepositoryImpl in features/repository
+    implement usecase.dart in core/usecase
+    implement GetArticleUseCase in features/domain/usecase
+
+Presentation
+    implement RemoteArticleState in features/presentation/article/remote/
+    implement RemoteArticleEvent in features/presentation/article/remote/
+    implement RemoteArticleBloc in features/presentation/article/remote/
+
+Dependency Injection
+    create method initializeDependencies in lib/injection_container.dart
+
+Display News
+    implement DailyNews in features/presentation/home/daily_news.dart
+    change in news_Api_service.g.dart
+    create article_tile in features/presentation/widgets
+
+
